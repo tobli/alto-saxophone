@@ -1,0 +1,20 @@
+{
+  "name": "chromedriver-install",
+  "version": "2.15.0",
+  "description": "Install and launch Chromedriver for Mac, Linux or Windows.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "install": "node install.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chromedriver",
+    "chrome"
+  ],
+  "author": "Tobias Lidskog <tobias@lidskog.se>",
+  "license": "MIT",
+  "dependencies": {
+    "download": "^4.1.2"
+  }
+}
