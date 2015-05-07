@@ -1,6 +1,7 @@
 'use strict';
 
 var Download = require('download'),
+    downloadStatus = require('download-status'),
     os = require('os');
 
 function getChromedriverUrl() {
@@ -21,4 +22,5 @@ function getChromedriverUrl() {
 new Download({mode: '755', extract: true})
     .get(getChromedriverUrl())
     .dest('vendor')
+    .use(downloadStatus())
     .run();
