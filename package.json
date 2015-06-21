@@ -1,6 +1,6 @@
 {
   "name": "@tobli/chromedriver-install",
-  "version": "2.15.0",
+  "version": "2.16.0",
   "description": "Install and launch Chromedriver for Mac, Linux or Windows.",
   "main": "index.js",
   "scripts": {
