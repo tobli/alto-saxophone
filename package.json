@@ -12,7 +12,12 @@
     "chromedriver",
     "chrome"
   ],
+  "homepage": "https://github.com/tobli/node-chromedriver-install",
   "author": "Tobias Lidskog <tobias@lidskog.se>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tobli/node-chromedriver-install.git"
+  },
   "license": "MIT",
   "dependencies": {
     "download": "^4.1.2",
