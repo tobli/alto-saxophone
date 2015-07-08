@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "install": "node install.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "keywords": [
     "chromedriver",
@@ -17,5 +17,8 @@
   "dependencies": {
     "download": "^4.1.2",
     "download-status": "^2.1.1"
+  },
+  "devDependencies": {
+    "semver": "^4.3.6"
   }
 }
