@@ -19,8 +19,16 @@ function getChromedriverUrl() {
   }
 }
 
+var url = getChromedriverUrl();
+
+console.log('Will download ' + url);
+
 new Download({mode: '755', extract: true})
-    .get(getChromedriverUrl())
+    .get(url)
     .dest('vendor')
     .use(downloadStatus())
-    .run();
+    .run(function(err) {
+      if (err) {
+        throw err;
+      }
+    });
