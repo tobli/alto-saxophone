@@ -23,4 +23,8 @@ new Download({mode: '755', extract: true})
     .get(getChromedriverUrl())
     .dest('vendor')
     .use(downloadStatus())
-    .run();
+    .run(function(err) {
+      if (err) {
+        throw err;
+      }
+    });
