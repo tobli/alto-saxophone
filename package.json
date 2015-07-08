@@ -18,6 +18,9 @@
     "type": "git",
     "url": "https://github.com/tobli/node-chromedriver-install.git"
   },
+  "bugs": {
+    "url": "https://github.com/tobli/node-chromedriver-install/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "download": "^4.1.2",
