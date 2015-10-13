@@ -1,6 +1,6 @@
 var cp = require('child_process'),
     semver = require('semver'),
-    chromedriver = require('./'),
+    chromedriver = require('./').chromedriver,
     packageVersion = require('./package.json').version;
 
 var expectedVersionPrefix = 'ChromeDriver ' + semver.major(packageVersion) + '.' + semver.minor(packageVersion);
