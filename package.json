@@ -20,8 +20,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "download": "^4.1.2",
-    "download-status": "^2.1.1"
+    "download": "^4.2.1",
+    "download-status": "^2.2.1"
   },
   "devDependencies": {
     "semver": "^5.0.1"
