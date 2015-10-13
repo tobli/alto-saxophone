@@ -1,5 +1,5 @@
 {
-  "name": "@tobli/chromedriver-install",
+  "name": "alto-saxophone",
   "version": "2.20.0",
   "description": "Install and launch Chromedriver for Mac, Linux or Windows.",
   "main": "index.js",
@@ -16,7 +16,7 @@
   "author": "Tobias Lidskog <tobias@lidskog.se>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tobli/node-chromedriver-install.git"
+    "url": "https://github.com/tobli/alto-saxophone.git"
   },
   "license": "MIT",
   "dependencies": {
