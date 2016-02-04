@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "eslint .",
     "install": "node install.js",
-    "test": "node test.js"
+    "test": "node test.js",
+    "check-latest": "node check-latest.js"
   },
   "keywords": [
     "webdriver",
