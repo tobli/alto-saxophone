@@ -5,7 +5,7 @@ var Download = require('download'),
     os = require('os');
 
 function getChromedriverUrl() {
-  var urlBase = 'http://chromedriver.storage.googleapis.com/2.21/';
+  var urlBase = 'http://chromedriver.storage.googleapis.com/2.22/';
 
   switch (os.platform()) {
     case 'darwin':
