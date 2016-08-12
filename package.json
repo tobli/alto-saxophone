@@ -1,6 +1,6 @@
 {
   "name": "alto-saxophone",
-  "version": "2.22.0",
+  "version": "2.23.0",
   "description": "Install and launch Chromedriver for Mac, Linux or Windows.",
   "main": "index.js",
   "scripts": {
