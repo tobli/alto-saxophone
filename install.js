@@ -5,7 +5,12 @@ var Download = require('download'),
     os = require('os');
 
 function getChromedriverUrl() {
-  var urlBase = 'http://chromedriver.storage.googleapis.com/2.24/';
+  var urlBase;
+  if (process.env.CHROMEDRIVER_BASE_URL) {
+    urlBase = process.env.CHROMEDRIVER_BASE_URL;
+  } else {
+    urlBase = 'http://chromedriver.storage.googleapis.com/2.24/';
+  }
 
   switch (os.platform()) {
     case 'darwin':
