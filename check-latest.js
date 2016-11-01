@@ -4,7 +4,7 @@ let request = require('request'),
   semver = require('semver'),
   packageVersion = require('./package.json').version;
 
-request("http://chromedriver.storage.googleapis.com/LATEST_RELEASE",
+request("https://chromedriver.storage.googleapis.com/LATEST_RELEASE",
   function(error, response, body) {
     if (error) {
       console.log("Failed to parse latest release version: " + error.message);
