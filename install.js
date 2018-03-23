@@ -9,7 +9,7 @@ function getChromedriverUrl() {
   if (process.env.CHROMEDRIVER_BASE_URL) {
     urlBase = process.env.CHROMEDRIVER_BASE_URL;
   } else {
-    urlBase = 'https://chromedriver.storage.googleapis.com/2.36/';
+    urlBase = 'https://chromedriver.storage.googleapis.com/2.37/';
   }
 
   switch (os.platform()) {
