@@ -24,12 +24,18 @@ function getChromedriverUrl() {
   }
 }
 
-new Download({mode: '755', extract: true})
-    .get(getChromedriverUrl())
-    .dest('vendor')
-    .use(downloadStatus())
-    .run(function(err) {
-      if (err) {
-        throw err;
-      }
-    });
+// There's no Chromedriver for ARM (Raspberry Pi) but we don't want to fail hard, instead just log
+// so you have a chance to run Firefox only or fix the driver yourself
+if (os.platform() === 'linux' && os.arch() === 'arm') {
+  console.log('Skipping installing Chromedriver on ARM since there\'s no official build'); /* eslint-disable-line no-console */
+} else {
+  new Download({mode: '755', extract: true})
+      .get(getChromedriverUrl())
+      .dest('vendor')
+      .use(downloadStatus())
+      .run(function(err) {
+        if (err) {
+          throw err;
+        }
+      });
+}
