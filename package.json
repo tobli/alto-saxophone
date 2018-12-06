@@ -21,11 +21,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "download": "^4.4.1",
-    "download-status": "^2.2.1"
+    "download": "7.1.0"
   },
   "devDependencies": {
-    "request": "^2.69.0",
+    "request": "^2.88.0",
     "semver": "^5.0.1"
   }
 }

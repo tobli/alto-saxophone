@@ -1,7 +1,6 @@
 'use strict';
 
-var Download = require('download'),
-    downloadStatus = require('download-status'),
+const Download = require('download'),
     os = require('os');
 
 function getChromedriverUrl() {
@@ -9,7 +8,7 @@ function getChromedriverUrl() {
   if (process.env.CHROMEDRIVER_BASE_URL) {
     urlBase = process.env.CHROMEDRIVER_BASE_URL;
   } else {
-    urlBase = 'https://chromedriver.storage.googleapis.com/2.43/';
+    urlBase = 'https://chromedriver.storage.googleapis.com/2.44/';
   }
 
   switch (os.platform()) {
@@ -29,13 +28,5 @@ function getChromedriverUrl() {
 if (os.platform() === 'linux' && os.arch() === 'arm') {
   console.log('Skipping installing Chromedriver on ARM since there\'s no official build'); /* eslint-disable-line no-console */
 } else {
-  new Download({mode: '755', extract: true})
-      .get(getChromedriverUrl())
-      .dest('vendor')
-      .use(downloadStatus())
-      .run(function(err) {
-        if (err) {
-          throw err;
-        }
-      });
+  Download(getChromedriverUrl(), 'vendor', {extract: true});
 }
